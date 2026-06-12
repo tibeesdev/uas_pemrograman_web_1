@@ -8,24 +8,27 @@
     padding: 20px;
 }
 
+/* Pembungkus Form Card */
 .container-form {
     background: #EAF5C0 !important;
     width: 100%;
-    max-width: 500px;
-    padding: 50px 40px 40px 40px;
+    max-width: 450px; /* Dipersempit sedikit agar lebih proporsional dan tidak terlalu lebar */
+    padding: 60px 40px 40px 40px; /* Padding atas ditambah agar judul tidak menabrak avatar */
     border-radius: 20px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
 }
 
+/* Memperbaiki Lingkaran Avatar di Atas Card */
 .avatar-header {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background: #EAF5C0;
     border: 3px solid #8AA242;
     border-radius: 50%;
     position: absolute;
-    top: -45px;
+    top: -50px; /* Setengah dari tinggi lingkaran */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -34,30 +37,98 @@
     z-index: 10;
 }
 
-/* Mempercantik input group bawaan Bootstrap */
-.input-group {
-    border: 2px solid #8AA242 !important;
-    border-radius: 10px !important;
-    overflow: hidden;
+.img-avatar {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
 }
 
+/* Memberi jarak aman agar judul tidak bertabrakan dengan avatar */
+.container-form h2 {
+    margin-top: 20px; 
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #333333;
+}
+
+/* Merapikan Desain Kotak Input Group Bootstrap */
+.input-group {
+    border: 2px solid #8AA242 !important;
+    border-radius: 12px !important; /* Membuat sudut lebih melengkung halus */
+    overflow: hidden;
+    background-color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+/* Bagian pembungkus icon kiri & kanan */
 .input-group-text {
     background-color: #FFFFFF !important;
     border: none !important;
+    padding: 0 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Memastikan input teks memakan ruang sisa dengan padding yang pas */
+.form-control {
+    border: none !important;
+    padding: 12px 10px 12px 0 !important; /* Menghapus padding kiri karena sudah ada space dari icon */
+    font-size: 15px;
+    color: #333;
 }
 
 .form-control:focus {
     box-shadow: none !important;
-    background-color: #fff !important;
+    background-color: #FFFFFF !important;
 }
 
+/* Tombol Submit Login */
 .btn-login {
     background: #8AA242 !important;
+    color: #FFFFFF !important;
     border: none !important;
-    border-radius: 10px !important;
-    transition: 0.3s ease;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.2s ease;
 }
 
 .btn-login:hover {
     background: #748a34 !important;
+    transform: translateY(-1px);
+}
+
+/* Link kecil di bawah */
+.link-forgot {
+    display: inline-block;
+    margin-top: 15px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link-forgot:hover {
+    text-decoration: underline;
+}
+
+.text-footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #444;
+}
+
+.text-footer a {
+    color: #8AA242;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-footer a:hover {
+    text-decoration: underline;
 }
