@@ -28,7 +28,7 @@
     border: 3px solid #8AA242;
     border-radius: 50%;
     position: absolute;
-    top: -50px; /* Setengah dari tinggi lingkaran */
+    top: -60px; /* Setengah dari tinggi lingkaran */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
