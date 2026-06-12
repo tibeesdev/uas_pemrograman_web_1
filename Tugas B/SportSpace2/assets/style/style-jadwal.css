@@ -1,0 +1,69 @@
+@import url('style-beranda.css');
+
+.container-jadwal {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 30px;
+    padding: 30px 50px;
+    align-items: start;
+}
+
+/* Responsivitas untuk layar HP */
+@media (max-width: 768px) {
+    .container-jadwal {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+}
+
+.sidebar-pilih {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-pilih {
+    background: #DDEBB3 !important; 
+    border: 1px solid #c8e66a;
+}
+
+.status-lapangan {
+    background: #DDEBB3 !important;
+    border: 1px solid #c8e66a;
+}
+
+.grid-jam {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item-jam {
+    background: #FFFFFF !important; 
+    border: 1px solid #b5cc74 !important;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.ringkasan {
+    grid-column: 1 / -1; 
+    background: #DDEBB3 !important;
+    border: 1px solid #c8e66a;
+}
+
+.btn-pesan {
+    background: #8AA242 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    transition: 0.2s ease;
+}
+
+.btn-pesan:hover {
+    background: #748a34 !important;
+}

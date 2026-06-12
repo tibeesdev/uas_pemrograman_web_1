@@ -1,0 +1,63 @@
+@import url('style-beranda.css');
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 20px;
+}
+
+.container-form {
+    background: #EAF5C0 !important;
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 40px 40px 40px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.avatar-header {
+    width: 90px;
+    height: 90px;
+    background: #EAF5C0;
+    border: 3px solid #8AA242;
+    border-radius: 50%;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Mempercantik input group bawaan Bootstrap */
+.input-group {
+    border: 2px solid #8AA242 !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.input-group-text {
+    background-color: #FFFFFF !important;
+    border: none !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    background-color: #fff !important;
+}
+
+.btn-login {
+    background: #8AA242 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    transition: 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #748a34 !important;
+}

@@ -1,0 +1,44 @@
+@import url('style-beranda.css');
+
+.main-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 20px;
+}
+
+.container-form {
+    background: #EAF5C0 !important;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Penyelarasan Input Group Register */
+.input-group {
+    border: 2px solid #8AA242 !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+.input-group-text {
+    background-color: #FFFFFF !important;
+    border: none !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.btn-daftar {
+    background: #8AA242 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    transition: background 0.3s;
+}
+
+.btn-daftar:hover {
+    background: #748a34 !important;
+}

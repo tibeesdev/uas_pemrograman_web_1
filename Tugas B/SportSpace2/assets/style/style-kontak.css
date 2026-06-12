@@ -1,0 +1,105 @@
+@import url('style-beranda.css');
+
+.main-kontak {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.box-kontak {
+    background: #EAF5C0;
+    width: 900px;
+    display: flex;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.kolom-sosmed {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item-sosmed {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+
+.icon-circle img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.wa {background: #25D366;}
+.fb { background: #1877F2; }
+.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.email { background: #EA4335; }
+
+.detail strong {display: block; font-size: 18px;}
+.detail p {font-size: 16px; font-weight: bold; margin: 2px 0;}
+.detail span {font-size: 14px; color: #555;}
+
+.vertical-line {
+    width: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 40px;
+}
+
+.kolom-operasional{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kolom-operasional h2{
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.card-jam {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.jam-utama {
+    font-size: 32px;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.green-divider {
+    height: 8px;
+    background: #8AA242;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.hari-ini {
+    color: #8AA242;
+    font-weight: bold;
+    font-size: 18px
+}
