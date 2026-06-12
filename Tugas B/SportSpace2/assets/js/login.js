@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // --- Fitur Show/Hide Password ---
     const togglePassword = document.getElementById("togglePassword");
     if (togglePassword) {
         togglePassword.addEventListener("click", function () {
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // --- Logika Login Local Storage ---
     const formLogin = document.getElementById("formLogin");
 
     if (formLogin) {
@@ -24,16 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const emailInput = document.getElementById("email").value.trim();
             const passwordInput = document.getElementById("password").value.trim();
 
-            // Ambil data user dari Local Storage
             const usersDB = JSON.parse(localStorage.getItem("usersDB")) || [];
 
-            // Cari user dengan email dan password yang cocok
             const userValid = usersDB.find(user => user.email === emailInput && user.password === passwordInput);
 
             if (!userValid) {
                 alert("Gagal Masuk: Email atau kata sandi Anda salah!");
             } else {
-                // Buat sesi login aktif menggunakan data user yang ditemukan
                 localStorage.setItem("activeSession", JSON.stringify({
                     nama: userValid.nama,
                     email: userValid.email

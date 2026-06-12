@@ -3,18 +3,20 @@
 .main-kontak {
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 80vh;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .box-kontak {
-    background: #EAF5C0;
-    width: 900px;
+    background: #EAF5C0 !important;
+    width: 100%;
+    max-width: 900px;
     display: flex;
+    flex-direction: row; 
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
 .kolom-sosmed {
@@ -30,40 +32,51 @@
     gap: 20px;
 }
 
-
 .icon-circle {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
-    color: white;
+    flex-shrink: 0; 
 }
 
 .icon-circle img {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
-.wa {background: #25D366;}
-.fb { background: #1877F2; }
+.wa { background-color: #25D366; }
+.fb { background-color: #1877F2; }
 .ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-.email { background: #EA4335; }
+.email { background-color: #EA4335; }
 
-.detail strong {display: block; font-size: 18px;}
-.detail p {font-size: 16px; font-weight: bold; margin: 2px 0;}
-.detail span {font-size: 14px; color: #555;}
+.detail strong {
+    display: block; 
+    font-size: 18px;
+    color: #222;
+}
+.detail p {
+    font-size: 15px; 
+    font-weight: bold; 
+    margin: 1px 0;
+    color: #444;
+}
+.detail span {
+    font-size: 13px; 
+    color: #666;
+}
 
 .vertical-line {
     width: 2px;
     background: rgba(0, 0, 0, 0.1);
     margin: 0 40px;
+    align-self: stretch;
 }
 
-.kolom-operasional{
+.kolom-operasional {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -71,28 +84,30 @@
     align-items: center;
 }
 
-.kolom-operasional h2{
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+.kolom-operasional h2 {
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-size: 22px;
 }
 
 .card-jam {
-    background: white;
+    background: #FFFFFF !important;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03) !important;
     width: 100%;
 }
 
 .jam-utama {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 900;
-    margin: 15px 0;
+    margin: 12px 0;
+    letter-spacing: 0.5px;
 }
 
 .green-divider {
-    height: 8px;
+    height: 6px;
     background: #8AA242;
     border-radius: 4px;
     margin: 15px 0;
@@ -101,5 +116,25 @@
 .hari-ini {
     color: #8AA242;
     font-weight: bold;
-    font-size: 18px
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .box-kontak {
+        flex-direction: column; 
+        padding: 30px 20px;
+        gap: 40px;
+    }
+    
+    .vertical-line {
+        display: none; 
+    }
+    
+    .kolom-operasional h2 {
+        font-size: 20px;
+    }
+    
+    .jam-utama {
+        font-size: 28px;
+    }
 }

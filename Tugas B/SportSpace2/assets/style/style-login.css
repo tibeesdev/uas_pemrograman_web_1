@@ -8,19 +8,17 @@
     padding: 20px;
 }
 
-/* Pembungkus Form Card */
 .container-form {
     background: #EAF5C0 !important;
     width: 100%;
-    max-width: 450px; /* Dipersempit sedikit agar lebih proporsional dan tidak terlalu lebar */
-    padding: 60px 40px 40px 40px; /* Padding atas ditambah agar judul tidak menabrak avatar */
+    max-width: 450px; 
+    padding: 60px 40px 40px 40px; 
     border-radius: 20px;
     position: relative;
     margin-top: 60px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Memperbaiki Lingkaran Avatar di Atas Card */
 .avatar-header {
     width: 100px;
     height: 100px;
@@ -28,7 +26,7 @@
     border: 3px solid #8AA242;
     border-radius: 50%;
     position: absolute;
-    top: -60px; /* Setengah dari tinggi lingkaran */
+    top: -60px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -43,7 +41,6 @@
     object-fit: contain;
 }
 
-/* Memberi jarak aman agar judul tidak bertabrakan dengan avatar */
 .container-form h2 {
     margin-top: 20px; 
     margin-bottom: 30px;
@@ -53,7 +50,6 @@
     color: #333333;
 }
 
-/* Merapikan Desain Kotak Input Group Bootstrap */
 .input-group {
     border: 2px solid #8AA242 !important;
     border-radius: 12px !important; /* Membuat sudut lebih melengkung halus */
@@ -62,7 +58,6 @@
     margin-bottom: 18px;
 }
 
-/* Bagian pembungkus icon kiri & kanan */
 .input-group-text {
     background-color: #FFFFFF !important;
     border: none !important;
@@ -72,7 +67,6 @@
     justify-content: center;
 }
 
-/* Memastikan input teks memakan ruang sisa dengan padding yang pas */
 .form-control {
     border: none !important;
     padding: 12px 10px 12px 0 !important; /* Menghapus padding kiri karena sudah ada space dari icon */
@@ -85,7 +79,6 @@
     background-color: #FFFFFF !important;
 }
 
-/* Tombol Submit Login */
 .btn-login {
     background: #8AA242 !important;
     color: #FFFFFF !important;

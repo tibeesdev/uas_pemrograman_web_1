@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // --- Fitur Show/Hide Password ---
     const toggleBtns = document.querySelectorAll(".toggle-password-btn");
     toggleBtns.forEach(btn => {
         btn.addEventListener("click", function () {
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // --- Logika Registrasi Local Storage ---
     const formRegister = document.getElementById("formRegister");
 
     if (formRegister) {
@@ -32,17 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Ambil database user lokal yang ada, atau buat baru jika kosong
             let usersDB = JSON.parse(localStorage.getItem("usersDB")) || [];
 
-            // Validasi: Cek apakah email sudah terdaftar sebelumnya
             const isEmailExist = usersDB.some(user => user.email === emailValue);
             if (isEmailExist) {
                 alert("Alamat email ini sudah terdaftar! Gunakan email lain.");
                 return;
             }
 
-            // Tambah objek user baru ke dalam database lokal
             const newUser = {
                 nama: namaValue,
                 email: emailValue,
@@ -50,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
             };
             usersDB.push(newUser);
 
-            // Simpan kembali array ke Local Storage
             localStorage.setItem("usersDB", JSON.stringify(usersDB));
 
             alert("Registrasi Berhasil! Akun Anda telah tersimpan secara lokal. Silakan login.");
