@@ -71,7 +71,7 @@
 
 .vertical-line {
     width: 2px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(15, 5, 5, 0.1);
     margin: 0 40px;
     align-self: stretch;
 }
